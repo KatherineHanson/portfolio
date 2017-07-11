@@ -6,8 +6,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Katherine Hanson's Portfolio</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Katherine Hanson's Web Development Portfolio">
+  <meta name="author" content="Katherine Hanson">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -17,11 +17,16 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
 
+  <!-- FONT AWESOME
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/modules.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -43,37 +48,128 @@
     </div>
   </header>
   <!-- END OF HEADER -->
+
+  <!-- NAVBAR -->
   <nav role="navigation">
-    ::before
-    <div class="container">
-      ::before
-      <button type="button">
-        <span class="sr-only"></span>
-      </button>
+    <!-- ::before -->
+    <!-- <div class="container"> -->
+    <div class="contains">
+      <!-- ::before -->
+      <div class="navbar-header">
+        <!-- ::before -->
+        <button type="button">
+          <span class="sr-only"></span>
+          <i class="fa fa-bars">
+            <!-- ::before -->
+          </i>
+        </button>
+        <div class="collapse">
+          <ul class="nav">
+            <!-- ::before -->
+              <li>
+                <a href="#about">ABOUT</a>
+              </li>
+              <li>
+                <a href="#portfolio">PORTFOLIO</a>
+              </li>
+              <li>
+                <a href="#contact">CONTACT</a>
+              </li>
+            <!-- ::after -->
+          </ul>
+        </div>
+      </div>
     </div>
   </nav>
-  <!-- NAVBAR -->
   <!-- END OF NAVBAR -->
 
   <!-- ABOUT -->
+  <div class="container" id="about">
+    <!-- ::before -->
+    <div class="row">
+      <!-- ::before -->
+      <div class="one-half column">
+        <!-- ::before -->
+        <div class="subheader">
+          <h2>ABOUT</h2>
+        </div>
+        <div class="about-pic">
+          <img src="images/katherine_professional_shot.jpg" alt="Katherine Hanson's headshot">
+        </div>
+        <div class="about-text">
+          <h4>Who am I?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim leo quis libero euismod, luctus eleifend justo porttitor. Duis id nisi risus. Morbi non euismod sem, nec malesuada ipsum. Proin mattis condimentum bibendum. Pellentesque eu purus eget orci facilisis gravida. Integer faucibus rhoncus porta. Sed congue ligula scelerisque elit vulputate, in eleifend enim gravida. Vestibulum imperdiet, metus eget ornare tempus, turpis ex laoreet mauris, vel finibus mi nulla quis metus. Donec eget pharetra arcu. Fusce rutrum suscipit tincidunt. Morbi ut sem ut nunc elementum tempus. Sed at congue mi, a cursus arcu. Aenean consectetur accumsan diam, non consectetur dolor placerat sit amet. Suspendisse dapibus orci quis aliquam vestibulum.</p>
+        </div>
+        <!-- ::after -->
+      </div>
+      <!-- ::after -->
+    </div>
+    <!-- ::after -->
+  </div>
   <!-- END OF ABOUT -->
 
   <!-- PORTFOLIO -->
+  <div class="container" id="portfolio">
+    <!-- ::before -->
+    <div class="row">
+      <!-- ::before -->
+      <div class="one-half column">
+        <!-- ::before -->
+        <div class="subheader">
+          <h2>PORTFOLIO</h2>
+        </div>
+        <div class="projects">
+          <div class="project-pic">
+            <img src="" alt="placeholder image">
+          </div>
+          <div class="project-text">
+            <h4>Project Name</h4>
+              <p>One sentence project sumary.</p>
+          </div>
+        </div>
+        <!-- ::after -->
+      </div>
+      <!-- ::after -->
+    </div>
+    <!-- ::after -->
+  </div>
   <!-- END OF PORTFOLIO -->
 
   <!-- CONTACT -->
+  <div class="container" id="contact">
+    <!-- ::before -->
+    <div class="row">
+      <!-- ::before -->
+      <div class="one-half column">
+        <!-- ::before -->
+        <div class="subheader">
+          <h2>CONTACT</h2>
+        </div>
+        <div class="contact-text">
+          <h4>
+            <a href="mailto:katherinemariehanson@gmail.com">
+              katherinemariehanson@gmail.com
+            </a>
+          </h4>
+          <h4>
+            <a href="https://github.com/KatherineHanson">
+              Github
+            </a>
+          </h4>
+        </div>
+        <!-- ::after -->
+      </div>
+      <!-- ::after -->
+    </div>
+    <!-- ::after -->
+  </div>
   <!-- END OF CONTACT -->
 
   <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2017</p>
+  </footer>
   <!-- END OF FOOTER -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h1>Hello!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim leo quis libero euismod, luctus eleifend justo porttitor. Duis id nisi risus. Morbi non euismod sem, nec malesuada ipsum. Proin mattis condimentum bibendum. Pellentesque eu purus eget orci facilisis gravida. Integer faucibus rhoncus porta. Sed congue ligula scelerisque elit vulputate, in eleifend enim gravida. Vestibulum imperdiet, metus eget ornare tempus, turpis ex laoreet mauris, vel finibus mi nulla quis metus. Donec eget pharetra arcu. Fusce rutrum suscipit tincidunt. Morbi ut sem ut nunc elementum tempus. Sed at congue mi, a cursus arcu. Aenean consectetur accumsan diam, non consectetur dolor placerat sit amet. Suspendisse dapibus orci quis aliquam vestibulum.</p>
-      </div>
-    </div>
-  </div>
 
   <script type='text/javascript' src="js/app.js"></script>
 <!-- End Document
