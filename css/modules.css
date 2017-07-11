@@ -1,0 +1,12 @@
+.nav li {
+  display: none;
+}
+
+
+@media all and (min-width: 960px) {
+  .nav li {
+      display: inline-block;
+      padding: 2%;
+    }
+  }
+}
