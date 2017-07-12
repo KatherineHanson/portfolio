@@ -1,8 +1,8 @@
 'use strict';
 
 // Project Data Constructor Function
-function Project(imageName,imageLink,projectName,projectSummary) {
-  this.imageName = imageName;
+function Project(imageAlt,imageLink,projectName,projectSummary) {
+  this.imageAlt = imageAlt;
   this.imageLink = imageLink;
   this.projectName = projectName;
   this.projectSummary = projectSummary;
