@@ -94,7 +94,7 @@
           <h2>ABOUT</h2>
         </div>
         <div class="about-pic">
-          <img src="images/katherine_professional_shot.jpg" alt="Katherine Hanson's headshot">
+          <img id="headshot" src="images/katherine_professional_shot.jpg" alt="Katherine Hanson's headshot">
         </div>
         <div class="about-text">
           <h4>Who am I?</h4>
@@ -109,30 +109,29 @@
   <!-- END OF ABOUT -->
 
   <!-- PORTFOLIO -->
-  <div class="container" id="portfolio">
-    <!-- ::before -->
-    <div class="row">
+  <section id="projects">
+    <div class="container" id="portfolio">
       <!-- ::before -->
-      <div class="one-half column">
-        <!-- ::before -->
-        <div class="subheader">
-          <h2>PORTFOLIO</h2>
-        </div>
-        <div class="projects">
-          <div class="project-pic">
-            <img src="" alt="placeholder image">
-          </div>
-          <div class="project-text">
-            <h4>Project Name</h4>
-              <p>One sentence project sumary.</p>
-          </div>
-        </div>
-        <!-- ::after -->
+      <div class="subheader">
+        <h2>PORTFOLIO</h2>
       </div>
       <!-- ::after -->
     </div>
-    <!-- ::after -->
-  </div>
+    <article class="template">
+      <div class="container">
+        <div class="code-projects">
+          <div class="project-pic">
+            <img class="project-img" src="images/favicon.png" alt="placeholder image">
+          </div>
+          <div class="project-text">
+            <h4>Project Name</h4>
+            <p>Created: <time pubdate datetime="2000-01-01">Publish Time</time></p>
+            <section class="project-summary">Placeholder text</section>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
   <!-- END OF PORTFOLIO -->
 
   <!-- CONTACT -->
@@ -166,7 +165,7 @@
   <!-- END OF CONTACT -->
 
   <!-- FOOTER -->
-  <footer>
+  <footer class="container">
     <p>&copy; 2017</p>
   </footer>
   <!-- END OF FOOTER -->
@@ -175,7 +174,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- LOCAL SCRIPTS -->
   <script type='text/javascript' src="js/codeProjects.js"></script>
-  <script type='text/javascript' src="js/app.js"></script>
+  <script type='text/javascript' src="js/project.js"></script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
