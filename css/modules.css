@@ -2,6 +2,17 @@
   display: none;
 }
 
+.template {
+  display: none;
+}
+
+#headshot {
+  border-radius: 50%;
+}
+
+.project-img {
+  border-radius: 2%;
+}
 
 @media all and (min-width: 960px) {
   .nav li {
