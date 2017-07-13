@@ -1,3 +1,13 @@
+.navbar {
+  background: #EBFCFB;
+  min-height: 33px;
+  border-radius: 0%;
+  width: 100%;
+  text-align: center;
+  margin: 0%;
+  box-shadow: 0px 0px 6px 0px;
+}
+
 .nav li {
   display: none;
 }
