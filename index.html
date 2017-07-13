@@ -40,7 +40,7 @@
   <!-- HEADER -->
   <header>
     <div class="row">
-      <h1>WELCOME<br>
+      <h1><span>WELCOME<span><br>
           TO<br>
           KATHERINE'S<br>
           PORTFOLIO
@@ -67,13 +67,13 @@
           <ul class="nav">
             <!-- ::before -->
               <li>
-                <a href="#about">ABOUT</a>
+                <a class="tab" data-content="about" href="#">ABOUT</a>
               </li>
               <li>
-                <a href="#portfolio">PORTFOLIO</a>
+                <a class="tab" data-content="projects" href="#">PORTFOLIO</a>
               </li>
               <li>
-                <a href="#contact">CONTACT</a>
+                <a class="tab" data-content="contact" href="#">CONTACT</a>
               </li>
             <!-- ::after -->
           </ul>
@@ -84,33 +84,35 @@
   <!-- END OF NAVBAR -->
 
   <!-- ABOUT -->
-  <div class="container" id="about">
-    <!-- ::before -->
-    <div class="row">
+  <section id="about" class="tab-content">
+    <div class="container">
       <!-- ::before -->
-      <div class="one-half column">
+      <div class="row">
         <!-- ::before -->
-        <div class="subheader">
-          <h2>ABOUT</h2>
-        </div>
-        <div class="about-pic">
-          <img id="headshot" src="images/katherine_professional_shot.jpg" alt="Katherine Hanson's headshot">
-        </div>
-        <div class="about-text">
-          <h4>Who am I?</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim leo quis libero euismod, luctus eleifend justo porttitor. Duis id nisi risus. Morbi non euismod sem, nec malesuada ipsum. Proin mattis condimentum bibendum. Pellentesque eu purus eget orci facilisis gravida. Integer faucibus rhoncus porta. Sed congue ligula scelerisque elit vulputate, in eleifend enim gravida. Vestibulum imperdiet, metus eget ornare tempus, turpis ex laoreet mauris, vel finibus mi nulla quis metus. Donec eget pharetra arcu. Fusce rutrum suscipit tincidunt. Morbi ut sem ut nunc elementum tempus. Sed at congue mi, a cursus arcu. Aenean consectetur accumsan diam, non consectetur dolor placerat sit amet. Suspendisse dapibus orci quis aliquam vestibulum.</p>
+        <div class="one-half column">
+          <!-- ::before -->
+          <div class="subheader">
+            <h2>ABOUT</h2>
+          </div>
+          <div class="about-pic">
+            <img id="headshot" src="images/katherine_professional_shot.jpg" alt="Katherine Hanson's headshot">
+          </div>
+          <div class="about-text">
+            <h4>Who am I?</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim leo quis libero euismod, luctus eleifend justo porttitor. Duis id nisi risus. Morbi non euismod sem, nec malesuada ipsum. Proin mattis condimentum bibendum. Pellentesque eu purus eget orci facilisis gravida. Integer faucibus rhoncus porta. Sed congue ligula scelerisque elit vulputate, in eleifend enim gravida. Vestibulum imperdiet, metus eget ornare tempus, turpis ex laoreet mauris, vel finibus mi nulla quis metus. Donec eget pharetra arcu. Fusce rutrum suscipit tincidunt. Morbi ut sem ut nunc elementum tempus. Sed at congue mi, a cursus arcu. Aenean consectetur accumsan diam, non consectetur dolor placerat sit amet. Suspendisse dapibus orci quis aliquam vestibulum.</p>
+          </div>
+          <!-- ::after -->
         </div>
         <!-- ::after -->
       </div>
       <!-- ::after -->
     </div>
-    <!-- ::after -->
-  </div>
+  </section>
   <!-- END OF ABOUT -->
 
   <!-- PORTFOLIO -->
-  <section id="projects">
-    <div class="container" id="portfolio">
+  <section id="projects" class="tab-content">
+    <div class="container">
       <!-- ::before -->
       <div class="subheader">
         <h2>PORTFOLIO</h2>
@@ -135,33 +137,35 @@
   <!-- END OF PORTFOLIO -->
 
   <!-- CONTACT -->
-  <div class="container" id="contact">
-    <!-- ::before -->
-    <div class="row">
+  <section id="contact" class="tab-content">
+    <div class="container">
       <!-- ::before -->
-      <div class="one-half column">
+      <div class="row">
         <!-- ::before -->
-        <div class="subheader">
-          <h2>CONTACT</h2>
-        </div>
-        <div class="contact-text">
-          <h4>
-            <a href="mailto:katherinemariehanson@gmail.com">
-              katherinemariehanson@gmail.com
-            </a>
-          </h4>
-          <h4>
-            <a href="https://github.com/KatherineHanson">
-              Github
-            </a>
-          </h4>
+        <div class="one-half column">
+          <!-- ::before -->
+          <div class="subheader">
+            <h2>CONTACT</h2>
+          </div>
+          <div class="contact-text">
+            <h4>
+              <a href="mailto:katherinemariehanson@gmail.com">
+                katherinemariehanson@gmail.com
+              </a>
+            </h4>
+            <h4>
+              <a href="https://github.com/KatherineHanson">
+                Github
+              </a>
+            </h4>
+          </div>
+          <!-- ::after -->
         </div>
         <!-- ::after -->
       </div>
       <!-- ::after -->
     </div>
-    <!-- ::after -->
-  </div>
+  </section>
   <!-- END OF CONTACT -->
 
   <!-- FOOTER -->

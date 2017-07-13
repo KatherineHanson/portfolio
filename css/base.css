@@ -2,3 +2,8 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+body {
+  background-color: #BEEEF2;
+  color: #1E8892;
+}
