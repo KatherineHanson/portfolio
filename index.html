@@ -32,6 +32,24 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <!-- Script tag to hold the Handlebars template
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script id="article-template" type="text/x-handlebars-template">
+    <article class="" data-category="{{category}}">
+      <div class="container">
+        <div class="code-projects">
+          <div class="project-pic">
+            <img class="project-img" src="{{imageSRC}}" alt="{{imageAlt}}">
+          </div>
+          <div class="project-text">
+            <h4>{{projectName}}</h4>
+            <p>Created: <time pubdate datetime="2000-01-01">{{finishedOn}}</time></p>
+            <section class="project-summary">{{{projectSummary}}}</section>
+          </div>
+        </div>
+      </div>
+    </article>
+  </script>
 </head>
 <body>
 
@@ -119,7 +137,7 @@
       </div>
       <!-- ::after -->
     </div>
-    <article class="template">
+    <!-- <article class="template">
       <div class="container">
         <div class="code-projects">
           <div class="project-pic">
@@ -132,7 +150,7 @@
           </div>
         </div>
       </div>
-    </article>
+    </article> -->
   </section>
   <!-- END OF PORTFOLIO -->
 
@@ -176,6 +194,7 @@
 
   <!-- VENDOR SCRIPTS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
   <!-- LOCAL SCRIPTS -->
   <script type='text/javascript' src="js/codeProjects.js"></script>
   <script type='text/javascript' src="js/project.js"></script>

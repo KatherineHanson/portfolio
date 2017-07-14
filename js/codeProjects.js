@@ -6,7 +6,7 @@ var rawData = [
     imageSRC: 'images/bus-mall.png',
     finishedOn: '2017-06-24',
     projectName: 'Bus Mall',
-    projectSummary: 'Shopping catalogue\'s customer preference-testing webpage',
+    projectSummary: '<p>Shopping catalogue\'s customer preference-testing webpage</p>',
     category: 'testing'
   },
   {
@@ -14,7 +14,7 @@ var rawData = [
     imageSRC: 'images/order-form.png',
     finishedOn: '2017-06-23',
     projectName: 'Order Form',
-    projectSummary: 'Shopping catalogue\'s customer-facing and business-facing product ordering pages',
+    projectSummary: '<p>Shopping catalogue\'s customer-facing and business-facing product ordering pages</p>',
     category: 'b2b and customer-facing'
   },
   {
@@ -22,7 +22,7 @@ var rawData = [
     imageSRC: 'images/cookie-stand.png',
     finishedOn: '2017-06-19',
     projectName: 'Cookie Stand',
-    projectSummary: 'Cookie company\'s business-facing page maintaining shop locations data and customer-facing homepage',
+    projectSummary: '<p>Cookie company\'s business-facing page maintaining shop locations data and customer-facing homepage</p>',
     category: 'b2b and customer-facing'
   }
 ]
