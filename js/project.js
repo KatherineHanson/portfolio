@@ -12,22 +12,23 @@ function Project(rawDataObj) {
   this.category = rawDataObj.category;
 }
 
-// var aboutMe = new Project('About Me','https://katherinehanson.github.io/about-me/','About Me Page','My first About Me page');
-//
-// console.log(aboutMe);
 Project.prototype.toHtml = function() {
-  var $newProject = $('article.template').clone();
-  $newProject.removeClass('template');
+  // var $newProject = $('article.template').clone();
+  // $newProject.removeClass('template');
+  //
+  // $newProject.attr('data-category', this.category);
+  //
+  // $newProject.find('img').attr('src', this.imageSRC);
+  // $newProject.find('img').attr('alt', this.imageAlt);
+  // $newProject.find('time').html(this.finishedOn);
+  // $newProject.find('h4').html('Project Name: ' + this.projectName);
+  // $newProject.find('section').html(this.projectSummary);
+  //
+  // return $newProject;
+  var source = $('#article-template').html();
+  var comp = Handlebars.compile(source);
 
-  $newProject.attr('data-category', this.category);
-
-  $newProject.find('img').attr('src', this.imageSRC);
-  $newProject.find('img').attr('alt', this.imageAlt);
-  $newProject.find('time').html(this.finishedOn);
-  $newProject.find('h4').html('Project Name: ' + this.projectName);
-  $newProject.find('section').html(this.projectSummary);
-
-  return $newProject;
+  return comp(this);
 };
 
 rawData.sort(function(a,b) {
