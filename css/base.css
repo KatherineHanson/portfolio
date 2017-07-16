@@ -7,3 +7,10 @@ body {
   background-color: #BEEEF2;
   color: #1E8892;
 }
+
+@media all and (min-width: 960px) {
+  button {
+      display: none;
+    }
+  }
+}
