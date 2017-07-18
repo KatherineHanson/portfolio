@@ -1,7 +1,5 @@
 'use strict';
 
-// var projects = [];
-
 // Project Data Constructor Function
 function Project(rawDataObj) {
   this.imageSRC = rawDataObj.imageSRC;
@@ -16,8 +14,6 @@ Project.all = [];
 
 // Project Data Render Function
 Project.prototype.toHtml = function() {
-  // var source = $('#project-template').html();
-  // var comp = Handlebars.compile(source);
   let comp = Handlebars.compile($('#project-template').text());
 
   return comp(this);
@@ -39,17 +35,17 @@ Project.loadAll = function(rawData) {
 Project.fetchAll = function() {
   if (localStorage.rawData) {
     // When rawData is already in localStorage,
-    // we can load it with the .loadAll function above,
+    // load it with the .loadAll function above,
     // and then render the index page (using the proper method on the articleView object).
     Project.loadAll($.parseJSON(localStorage.rawData)); //DONE: What do we pass in to loadAll()?
-     //Method we call to render the index page?
+     //Method to render the index page
     pageView.initIndexPage();
   } else {
-    // When we don't already have the rawData,
-    // we need to retrieve the JSON file from the server with AJAX (which jQuery method is best for this?),
-    // cache it in localStorage so we can skip the server call next time,
-    // then load all the data into Project.all with the .loadAll function above,
-    // and then render the index page.
+    // When rawData isn't already in localStorage,
+    // retrieve the JSON file from the server with AJAX,
+    // cache it in localStorage,
+    // load all the data into Project.all with the .loadAll function above,
+    // render the index page.
     $.getJSON('data/codeProjects.json')
        .then(
        //stringify into localstorage
@@ -64,9 +60,3 @@ Project.fetchAll = function() {
        })
   }
 }
-
-// LAST PIECE OF ORIGINAL CODE I NEED TO
-// FIGURE OUT WHAT TO DO WITH
-// Project.all.forEach(function(article) {
-//   $('#projects').append(article.toHtml());
-// });
