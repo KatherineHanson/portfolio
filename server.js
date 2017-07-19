@@ -13,6 +13,7 @@ const bodyParser = require('body-parser').urlencoded({extended: true});
 const PORT = process.env.PORT || 3000;
 
 // TODO: Include all of the static resources as an argument to app.use()
+app.use(express.static('./public'));
 
 // TODO: (STRETCH) Write a new route that will handle a request and send the new.html file back to the user
 
