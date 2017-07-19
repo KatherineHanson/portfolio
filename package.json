@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio package.json file",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatherineHanson/portfolio.git"
+  },
+  "keywords": [
+    "class-07",
+    "portfolio",
+    "node",
+    "npm"
+  ],
+  "author": "Katherine Hanson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KatherineHanson/portfolio/issues"
+  },
+  "homepage": "https://github.com/KatherineHanson/portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+}
