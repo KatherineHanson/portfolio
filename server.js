@@ -6,22 +6,14 @@
 // Remember to install express, and be sure that it's been added to your package.json as a dependency
 // There is also a package here called body-parser, which is required in for use in a new route.
 // Be sure to install that and save it as a dependency after you create your package.json.
-let express = require('express');
-let app = express();
+const express = require('express');
+const app = express();
 
 const bodyParser = require('body-parser').urlencoded({extended: true});
 const PORT = process.env.PORT || 3000;
 
 // Include all of the static resources as an argument to app.use()
 app.use(express.static('./public'));
-
-app.post('/articles', bodyParser, function(request, response) {
-  // This route will receive a new article from the form page, new.html,
-  // and log that form data to the console. We will wire this up soon to actually
-  // write a record to our persistence layer!
-  console.log(request.body);
-  response.send('Record posted to server!!');
-})
 
 app.listen(PORT, function() {
   // Log to the console a message that lets you know which port your server has started on
