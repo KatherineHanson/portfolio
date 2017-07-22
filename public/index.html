@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <!-- Basic Page Needs
@@ -52,11 +53,13 @@
     </article>
   </script>
 </head>
+
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- HEADER -->
+  <!-- Try to not use BREAK's -->
   <header>
     <div class="row">
       <h1><span>WELCOME<span><br>
@@ -76,6 +79,7 @@
       <!-- ::before -->
       <div class="navbar-header">
         <!-- ::before -->
+        <!-- Reimplement Nav Drop Down For Mobile Use -->
         <button type="button">
           <span class="sr-only"></span>
           <i class="fa fa-bars">
@@ -85,15 +89,15 @@
         <div class="collapse">
           <ul class="nav">
             <!-- ::before -->
-              <li>
-                <a class="tab" data-content="about" href="#">ABOUT</a>
-              </li>
-              <li>
-                <a class="tab" data-content="projects" href="#">PORTFOLIO</a>
-              </li>
-              <li>
-                <a class="tab" data-content="contact" href="#">CONTACT</a>
-              </li>
+            <li>
+              <a class="tab" data-content="about" href="#">ABOUT</a>
+            </li>
+            <li>
+              <a class="tab" data-content="projects" href="#">PORTFOLIO</a>
+            </li>
+            <li>
+              <a class="tab" data-content="contact" href="#">CONTACT</a>
+            </li>
             <!-- ::after -->
           </ul>
         </div>
@@ -118,7 +122,11 @@
           </div>
           <div class="about-text">
             <h4>Who am I?</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim leo quis libero euismod, luctus eleifend justo porttitor. Duis id nisi risus. Morbi non euismod sem, nec malesuada ipsum. Proin mattis condimentum bibendum. Pellentesque eu purus eget orci facilisis gravida. Integer faucibus rhoncus porta. Sed congue ligula scelerisque elit vulputate, in eleifend enim gravida. Vestibulum imperdiet, metus eget ornare tempus, turpis ex laoreet mauris, vel finibus mi nulla quis metus. Donec eget pharetra arcu. Fusce rutrum suscipit tincidunt. Morbi ut sem ut nunc elementum tempus. Sed at congue mi, a cursus arcu. Aenean consectetur accumsan diam, non consectetur dolor placerat sit amet. Suspendisse dapibus orci quis aliquam vestibulum.</p>
+            <!-- Add Real information Katherine! I know you can write! -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim leo quis libero euismod, luctus eleifend justo porttitor. Duis id nisi risus. Morbi non euismod sem, nec malesuada ipsum. Proin mattis condimentum bibendum. Pellentesque
+              eu purus eget orci facilisis gravida. Integer faucibus rhoncus porta. Sed congue ligula scelerisque elit vulputate, in eleifend enim gravida. Vestibulum imperdiet, metus eget ornare tempus, turpis ex laoreet mauris, vel finibus mi nulla
+              quis metus. Donec eget pharetra arcu. Fusce rutrum suscipit tincidunt. Morbi ut sem ut nunc elementum tempus. Sed at congue mi, a cursus arcu. Aenean consectetur accumsan diam, non consectetur dolor placerat sit amet. Suspendisse dapibus
+              orci quis aliquam vestibulum.</p>
           </div>
           <!-- ::after -->
         </div>
@@ -145,6 +153,7 @@
   <!-- CONTACT -->
   <!-- Add a contact form to this page -->
   <section id="contact" class="tab-content">
+    <!-- Maybe add some more content. A row of PNG's -->
     <div class="container">
       <!-- ::before -->
       <div class="row">
@@ -191,7 +200,8 @@
     // Model func that initiates data retrieval
     Project.fetchAll();
   </script>
-<!-- End Document
+  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+
 </html>
