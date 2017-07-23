@@ -8,6 +8,11 @@ body {
   color: #1E8892;
 }
 
+h1 > p {
+   margin-top:5px;
+   margin-bottom:5px
+}
+
 @media all and (min-width: 960px) {
   button {
       display: none;
