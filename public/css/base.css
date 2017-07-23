@@ -9,8 +9,8 @@ body {
 }
 
 h1 > p {
-   margin-top:5px;
-   margin-bottom:5px
+   margin-top:0%;
+   margin-bottom:0%;
 }
 
 @media all and (min-width: 960px) {
