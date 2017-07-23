@@ -3,6 +3,10 @@ img {
   height: auto;
 }
 
+a > img {
+  max-width: 50%;
+}
+
 body {
   background-color: #BEEEF2;
   color: #1E8892;
