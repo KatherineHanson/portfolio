@@ -7,6 +7,10 @@ a > img {
   max-width: 50%;
 }
 
+li {
+  display: none;
+}
+
 body {
   background-color: #BEEEF2;
   color: #1E8892;
