@@ -8,12 +8,8 @@
   box-shadow: 0px 0px 6px 0px;
 }
 
-li {
-  display: none;
-}
-
 .li {
-  display: inline-block;
+  display: block;
   padding: 2%;
 }
 
