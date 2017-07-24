@@ -4,6 +4,10 @@
 var pageView = {};
 
 pageView.handleMainNav = function() {
+  $('.navbar-header').on('click', 'button', function() {
+    $('li').toggleClass('li');
+  });
+
   $('.navbar-header').on('click', '.tab', function() {
     $('.tab-content').hide();
     $('#' + $(this).data('content')).fadeIn();
