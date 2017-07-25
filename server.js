@@ -15,7 +15,11 @@ const PORT = process.env.PORT || 3003;
 // Include all of the static resources as an argument to app.use()
 app.use(express.static('./public'));
 
-app.listen(PORT, function() {
+app.get('/index', (request, response) => response.sendFile('index.html', {
+  root: './public'
+}));
+
+app.listen(PORT, () => {
   // Log to the console a message that lets you know which port your server has started on
   console.log(`The server is running on port: "${PORT}"`)
 });

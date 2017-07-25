@@ -1,10 +1,10 @@
-'use strict'
+'use strict';
 
 // Configure a view object, to hold all our functions for dynamic updates and article-related event handlers.
 var pageView = {};
 
-pageView.handleMainNav = function() {
-  $('.navbar-header').on('click', 'button', function() {
+pageView.handleMainNav = () => {
+  $('.navbar-header').on('click', 'button', () => {
     $('li').toggleClass('li');
   });
 
@@ -17,9 +17,18 @@ pageView.handleMainNav = function() {
   $('.navbar-header .tab:first').click();
 };
 
+let sleepHours = [7,7,7,7,7,7,7];
+pageView.calculateSleepHours = sleepHours => {
+  let sleepTotal = sleepHours.reduce((sum, value) => {
+    return sum + value;
+  }, 0);
+  console.log('You slept ' + sleepTotal + ' hours this week!');
+}
+
 // Call all of the above functions, once we are sure the DOM is ready.
-pageView.initIndexPage = function() {
+pageView.initIndexPage = () => {
   Project.all.map(article => $('#projects').append(article.toHtml()))
 
   pageView.handleMainNav();
+  pageView.calculateSleepHours(sleepHours);
 };
