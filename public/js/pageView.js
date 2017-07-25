@@ -19,9 +19,7 @@ pageView.handleMainNav = function() {
 
 // Call all of the above functions, once we are sure the DOM is ready.
 pageView.initIndexPage = function() {
-  Project.all.forEach(function(article) {
-    $('#projects').append(article.toHtml());
-  });
+  Project.all.map(article => $('#projects').append(article.toHtml()))
 
   pageView.handleMainNav();
 };

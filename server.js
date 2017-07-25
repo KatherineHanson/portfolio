@@ -10,7 +10,7 @@ const express = require('express');
 const app = express();
 
 const bodyParser = require('body-parser').urlencoded({extended: true});
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3003;
 
 // Include all of the static resources as an argument to app.use()
 app.use(express.static('./public'));

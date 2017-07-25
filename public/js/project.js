@@ -2,36 +2,28 @@
 
 // Project Data Constructor Function
 function Project(rawDataObj) {
-  this.imageSRC = rawDataObj.imageSRC;
-  this.imageAlt = rawDataObj.imageAlt;
-  this.finishedOn = rawDataObj.finishedOn;
-  this.projectName = rawDataObj.projectName;
-  this.projectSummary = rawDataObj.projectSummary;
-  this.category = rawDataObj.category;
+  Object.keys(rawDataObj).map(key => this[key] = rawDataObj[key]);
 }
 
 Project.all = [];
 
 // Project Data Render Function
 Project.prototype.toHtml = function() {
-  let comp = Handlebars.compile($('#project-template').text());
+  let template = Handlebars.compile($('#project-template').text());
 
-  return comp(this);
+  return template(this);
 };
 
 // Use rawData to instantiate all articles function
-Project.loadAll = function(rawData) {
-  rawData.sort(function(a,b) {
-    return (new Date(b.finishedOn)) - (new Date(a.finishedOn));
-  });
-
-  rawData.forEach(function(projectObject) {
-    Project.all.push(new Project(projectObject));
-  });
-}
+Project.loadAll = rows => {
+  rows.sort((a,b) => (new Date(b.publishedOn)) - (new Date(a.publishedOn)));
+  Project.all = rows.map(ele => new Project(ele));
+};
 
 // Function that retrieves the data from either a local or remote
 // source, and processes it, then hands off control to the View.
+
+
 Project.fetchAll = function() {
   if (localStorage.rawData) {
     // When rawData is already in localStorage,
