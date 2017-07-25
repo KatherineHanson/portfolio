@@ -36,6 +36,5 @@ var app = app || {};
     pageView.calculateSleepHours(sleepHours);
   };
 
-  Project.fetchAll(pageView.initIndexPage);
   module.pageView = pageView;
 })(window);
