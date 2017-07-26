@@ -7,7 +7,7 @@ var app = app || {};
 
   contactController.init = () => {
     $('.tab-content').hide();
-    $('#contact').fadeIn();
+    $('#contact').show();
   }
 
   module.contactController = contactController;
