@@ -5,7 +5,7 @@ var app = app || {};
 (function(module) {
   const homepageController = {};
 
-  homepageController.init = function() {
+  homepageController.init = () => {
     $('.tab-content').hide();
     $('#about').show();
   }

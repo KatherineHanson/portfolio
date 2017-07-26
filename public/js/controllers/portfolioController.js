@@ -5,7 +5,7 @@ var app = app || {};
 (function(module) {
   const portfolioController = {};
 
-  portfolioController.init = function() {
+  portfolioController.init = () => {
     $('.tab-content').hide();
     $('#projects').show();
   }
