@@ -1,7 +1,5 @@
 'use strict';
 
-var app = app || {};
-
 (function(module) {
   // Project Data Constructor Function
   function Project(rawDataObj) {

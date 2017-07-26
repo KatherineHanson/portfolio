@@ -89,13 +89,13 @@
           <ul class="nav">
             <!-- ::before -->
             <li>
-              <a class="tab" data-content="about" href="#">WHO IS KATHERINE?</a>
+              <a class="tab" data-content="about" href="/">WHO IS KATHERINE?</a>
             </li>
             <li>
-              <a class="tab" data-content="projects" href="#">PORTFOLIO</a>
+              <a class="tab" data-content="projects" href="/portfolio">PORTFOLIO</a>
             </li>
             <li>
-              <a class="tab" data-content="contact" href="#">CONTACT</a>
+              <a class="tab" data-content="contact" href="/contact">CONTACT</a>
             </li>
             <!-- ::after -->
           </ul>
@@ -197,6 +197,12 @@
   <script>
     Project.fetchAll(pageView.initIndexPage);
   </script>
+
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+  <script src="js/controllers/homepageController.js"></script>
+  <script src="js/controllers/portfolioController.js"></script>
+  <script src="js/controllers/contactController.js"></script>
+  <script src="js/controllers/routes.js"></script>
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
