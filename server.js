@@ -28,6 +28,6 @@ function proxyGitHub(request, response) {
 app.get('/github/*', proxyGitHub);
 
 app.listen(PORT, () => {
-  // Log to the console a message that lets you know which port your server has started on
+  // console.log message that lets you know which port your server has started on
   console.log(`The server is running on port: "${PORT}"`)
 });
