@@ -2,7 +2,7 @@
 
 (function(module) {
   // Configure a view object, to hold all our functions for dynamic updates and article-related event handlers.
-  var pageView = {};
+  const pageView = {};
 
   let sleepHours = [7,7,7,7,7,7,7];
   pageView.calculateSleepHours = sleepHours => {
