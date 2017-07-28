@@ -10,8 +10,6 @@ var app = app || {};
 
   };
 
-  // Remember that new Handlebars template? Let's compile it!
-  // Save the result in this `render` variable.
   // EASY COMPILE function -- uses the render from down below.
   let render = Handlebars.compile($('#repo-template').text());
 
