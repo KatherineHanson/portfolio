@@ -26,7 +26,7 @@
   Project.fetchAll = () => {
     if (localStorage.rawData) {
       Project.loadAll($.parseJSON(localStorage.rawData));
-      // pageView.initIndexPage();
+      pageView.initIndexPage();
     } else {
       $.getJSON('data/codeProjects.json')
          .then(
@@ -34,7 +34,7 @@
            console.log(data);
            localStorage.setItem('rawData', JSON.stringify(data));
            Project.loadAll($.parseJSON(localStorage.rawData));
-          //  pageView.initIndexPage();
+           pageView.initIndexPage();
          },
          err => {
            console.log(err);
