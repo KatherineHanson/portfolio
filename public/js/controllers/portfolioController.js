@@ -23,12 +23,12 @@ var app = app || {};
     }
   };
 
-  // portfolioController.init = () => {
-  //   $('.tab-content').hide();
-  //   $('#projects').show();
-  //
-  //   app.repos.requestRepos(app.repoView.index);
-  // }
+  portfolioController.init = () => {
+    $('.tab-content').hide();
+    $('#projects').show();
+
+    app.repos.requestRepos(app.repoView.index);
+  }
 
   module.portfolioController = portfolioController;
 })(app);
