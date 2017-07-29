@@ -26,6 +26,10 @@ function proxyGitHub(request, response) {
   }))(request, response);
 }
 
+// new routes that will request index.html's content for the website.
+app.get('/', (request, response) => response.sendFile('index.html', {root: './public'}));
+app.get('/portfolio', (request, response) => response.sendFile('index.html', {root: './public'}));
+app.get('/contact', (request, response) => response.sendFile('index.html', {root: './public'}));
 // new route that will use middle man proxy
 app.get('/github/*', proxyGitHub);
 
