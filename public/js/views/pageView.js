@@ -10,12 +10,12 @@
     return template(project);
   };
 
-  // // Refactor this method so it works with any number of projects.
+  // // REVIEW: Refactor this method so it works with any number of projects.
   // // Also, it should be idempotent, so it can be run multiple times with identical results.
   pageView.index = function(projects) {
-    $('.tab-content').hide();
     $('#projects').show();
-    projects.forEach(p => $('#projects').append(render(p)))
+    $('#projects article').remove();
+    projects.forEach(a => $('#projects').append(render(a)))
 
   let sleepHours = [7,7,7,7,7,7,7];
   pageView.calculateSleepHours = sleepHours => {
