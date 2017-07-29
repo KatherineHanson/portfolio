@@ -16,6 +16,7 @@
     $('#projects').show();
     $('#projects article').remove();
     projects.forEach(a => $('#projects').append(render(a)))
+  }
 
   let sleepHours = [7,7,7,7,7,7,7];
   pageView.calculateSleepHours = sleepHours => {
