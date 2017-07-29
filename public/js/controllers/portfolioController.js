@@ -5,7 +5,7 @@ var app = app || {};
 (function(module) {
   const portfolioController = {};
 
-  // function calling the articles data to define the view we will see. It uses the portfolioView.index function located in this file.
+  // function calling the projects data to define the view we will see. It uses the portfolioView.index function located in this file.
   portfolioController.index = (ctx) => app.pageView.index(ctx.projects);
 
   // Middleware for grabbing all projects:

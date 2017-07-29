@@ -8,12 +8,12 @@
 
   Project.all = [];
 
-  // Project Data Render Function
-  Project.prototype.toHtml = function() {
-    let template = Handlebars.compile($('#project-template').text());
-
-    return template(this);
-  };
+  // // Project Data Render Function
+  // Project.prototype.toHtml = function() {
+  //   let template = Handlebars.compile($('#project-template').text());
+  //
+  //   return template(this);
+  // };
 
   // Use rawData to instantiate all articles function
   Project.loadAll = rows => {
