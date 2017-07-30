@@ -28,7 +28,7 @@
 
   // Call all of the above functions, once we are sure the DOM is ready.
   pageView.initIndexPage = () => {
-    app.Project.all.map(article => $('#projects').append(article.toHtml()));
+    // app.Project.all.map(article => $('#projects').append(article.toHtml()));
 
     pageView.calculateSleepHours(sleepHours);
   };
