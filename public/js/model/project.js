@@ -23,23 +23,30 @@
 
   // Function that retrieves the data from either a local or remote
   // source, and processes it, then hands off control to the View.
-  Project.fetchAll = () => {
-    if (localStorage.rawData) {
-      Project.loadAll($.parseJSON(localStorage.rawData));
-      pageView.initIndexPage();
-    } else {
-      $.getJSON('data/codeProjects.json')
-         .then(
-         data => {
-           console.log(data);
-           localStorage.setItem('rawData', JSON.stringify(data));
-           Project.loadAll($.parseJSON(localStorage.rawData));
-           pageView.initIndexPage();
-         },
-         err => {
-           console.log(err);
-         })
-    }
+  Project.fetchAll = callback => {
+    $.get('/portfolio')
+    .then(
+      results => {
+        Project.loadAll(results);
+        callback();
+      }
+    )
+    // if (localStorage.rawData) {
+    //   Project.loadAll($.parseJSON(localStorage.rawData));
+    //   pageView.initIndexPage();
+    // } else {
+    //   $.getJSON('data/codeProjects.json')
+    //      .then(
+    //      data => {
+    //       //  console.log(data);
+    //        localStorage.setItem('rawData', JSON.stringify(data));
+    //        Project.loadAll($.parseJSON(localStorage.rawData));
+    //        pageView.initIndexPage();
+    //      },
+    //      err => {
+    //        console.log(err);
+    //      })
+    // }
   }
 
   module.Project = Project;
