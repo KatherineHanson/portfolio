@@ -13,8 +13,8 @@ const PORT = process.env.PORT || 4000;
 const app = express();
 
 // Include all of the static resources as an argument to app.use()
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('./public'));
 
 // proxy method that acts as a 'middle man', or middleware, for request
