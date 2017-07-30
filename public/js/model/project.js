@@ -15,9 +15,9 @@
   //   return template(this);
   // };
 
-  // Use rawData to instantiate all articles function
+  // Use rawData to instantiate all projects function
   Project.loadAll = rows => {
-    rows.sort((a,b) => (new Date(b.publishedOn)) - (new Date(a.publishedOn)));
+    // rows.sort((a,b) => (new Date(b.publishedOn)) - (new Date(a.publishedOn)));
     Project.all = rows.map(ele => new Project(ele));
   };
 
