@@ -16,14 +16,14 @@
   // };
 
   // Use rawData to instantiate all projects function
-  // Project.loadAll = rows => {
-  //   // rows.sort((a,b) => (new Date(b.publishedOn)) - (new Date(a.publishedOn)));
-  //   Project.all = rows.map(ele => new Project(ele));
-  // };
+  Project.loadAll = rows => {
+  rows.sort((a,b) => (new Date(b.publishedOn)) - (new Date(a.publishedOn)));
+    Project.all = rows.map(ele => new Project(ele));
+  };
 
   // Function that retrieves the data from either a local or remote
   // source, and processes it, then hands off control to the View.
-  // Project.fetchAll = callback => {
+  Project.fetchAll = () => {
   //   $.get('/portfolio')
   //   .then(
   //     results => {
@@ -31,22 +31,22 @@
   //       callback();
   //     }
   //   )
-    // if (localStorage.rawData) {
-    //   Project.loadAll($.parseJSON(localStorage.rawData));
-    //   pageView.initIndexPage();
-    // } else {
-    //   $.getJSON('data/codeProjects.json')
-    //      .then(
-    //      data => {
-    //       //  console.log(data);
-    //        localStorage.setItem('rawData', JSON.stringify(data));
-    //        Project.loadAll($.parseJSON(localStorage.rawData));
-    //        pageView.initIndexPage();
-    //      },
-    //      err => {
-    //        console.log(err);
-    //      })
-    // }
+    if (localStorage.rawData) {
+      Project.loadAll($.parseJSON(localStorage.rawData));
+      pageView.initIndexPage();
+    } else {
+      $.getJSON('data/codeProjects.json')
+         .then(
+         data => {
+          //  console.log(data);
+           localStorage.setItem('rawData', JSON.stringify(data));
+           Project.loadAll($.parseJSON(localStorage.rawData));
+           pageView.initIndexPage();
+         },
+         err => {
+           console.log(err);
+         })
+    }
   }
 
   module.Project = Project;
